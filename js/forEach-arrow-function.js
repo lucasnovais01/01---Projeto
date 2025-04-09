@@ -11,7 +11,7 @@ const imgs = document.querySelectorAll('img');
 imgs.forEach(function(item, index, array){
   console.log(item);
   console.log(index);
-  console.log(array[index]); //da pra colocar index dentro do array
+  console.log(array); //da pra colocar index, array[index], dentro do array
 });
 // ****************
 console.log(" Parte 2 array e array-like: ")
@@ -29,3 +29,32 @@ const titulosArray = Array.from(titulos);
 titulosArray.forEach(function(item){
   console.log(item);
 });
+console.log("Parte 3 - Arrow Function e forEach abaixo")
+//Arrow function
+// => arrow
+
+const imagens = document.querySelectorAll('img');
+
+//formas de usar o forEach abaixo
+
+// titulosArray.forEach(function(item)){}
+imagens.forEach((item)=>{
+  console.log(item);
+});
+
+imagens.forEach(item=>{
+  //console.log(item);
+});
+
+imagens.forEach((item, index)=>{
+  //console.log(item, index);
+});
+
+console.log("Parte 3a - Arrow");
+
+let i = 0;
+imagens.forEach(()=>{
+  console.log(i++);
+});
+
+
