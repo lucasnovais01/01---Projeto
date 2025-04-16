@@ -88,10 +88,10 @@ window.addEventListener('keydown', callKey);
 // 3 - Se o usuário clicar na tecla (t) aumento todo
 // o texto do site.
 
-const todosElementos = document.querySelectorAll('body *');
+const todosElementos = document.querySelectorAll('body');
 
 todosElementos.forEach((coisa) => {
-  coisa.addEventListener('click' => {
+  coisa.addEventListener('click', () => {
 
     console.log('Elemento clicado: ', coisa);
   })
@@ -109,28 +109,4 @@ function showAll(){
 function showOnly(index){
 
 }
-
-
-
-// 1 - Selecione todos os elementos do site começando a partir do body
-const todosElementos = document.querySelectorAll('body *');
-
-// Adiciona o evento de clique a cada elemento
-todosElementos.forEach((elemento) => {
-  elemento.addEventListener('click', (event) => {
-    // Previne a propagação do evento para evitar múltiplos cliques
-    event.stopPropagation();
-    
-    // Mostra no console qual elemento foi clicado
-    console.log('Elemento clicado:', elemento);
-    
-    // Opcional: destaca visualmente o elemento clicado
-    elemento.style.outline = '2px solid red';
-    
-    // Remove o destaque após 1 segundo
-    setTimeout(() => {
-      elemento.style.outline = '';
-    }, 1000);
-  });
-});
 */
