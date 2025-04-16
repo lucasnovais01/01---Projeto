@@ -181,3 +181,49 @@ body { /* Body é o elemento pai, o grid-section é filho do body */
 .menu a:hover{
   color:aqua;
 }
+
+/* --- Daqui pra baixo está relacionada ao Navegacao.js --- */
+
+/* css para ocultar e mostrar as imagens na página
+  e aplicar efeitos de entrada da imagem ativa.
+  evidenciar a imagem "foco";
+*/
+
+.animal-item.oculto {
+
+  display: none !important;
+}
+
+.animal-item.ativo {
+
+  display: show 1s ease forwards; /*ele executa e fica mostrando ela */
+}
+
+@keyframes show { /* dois parametros de onde veio e pra onde vai */
+
+  from {
+    opacity: 0;
+    transform: translate3d(-30px,0,0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+.animal-item img {
+
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: none;
+  transform: scale(1);
+  border-radius: 8px;
+}
+
+.animal-item.ativo img {
+
+  border: 2px solid #7f7b7d;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05); /*leve zoom na imagem */
+
+}
