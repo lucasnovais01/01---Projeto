@@ -1,7 +1,7 @@
 console.log("05 - Eventos: ");
 
 //  Eventos
-
+/*
 console.log("Parte 1: ");
 
 img = document.querySelector('img');
@@ -38,6 +38,7 @@ function executaCallBack(e){
   console.log(target);
   console.log(type);
   console.log(path);
+  */
   /*
   console.log( 
     currentTarget,
@@ -45,8 +46,10 @@ function executaCallBack(e){
     type,
     path
     );
-*/
 }
+*/
+
+/*
 
 animaisLista.addEventListener('click', executaCallBack);
 
@@ -76,6 +79,7 @@ function callKey(e){
 
 window.addEventListener('keydown', callKey);
 
+*/
 
 // 1 - Selecione todo os elementos do site começando a
 // partir do body, ao clique mostre exatamente
@@ -96,6 +100,7 @@ todosElementos.forEach((coisa) => {
     console.log('Elemento clicado: ', coisa);
   })
 })
+
 
 /*
 let activeIndex = null;
