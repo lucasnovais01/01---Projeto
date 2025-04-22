@@ -227,3 +227,9 @@ body { /* Body é o elemento pai, o grid-section é filho do body */
   transform: scale(1.05); /*leve zoom na imagem */
 
 }
+
+/* --- Exercicio 3 ---- */
+
+.aumentar-texto {
+  font-size: 120%;
+}

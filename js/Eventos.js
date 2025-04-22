@@ -92,6 +92,8 @@ window.addEventListener('keydown', callKey);
 // 3 - Se o usuário clicar na tecla (t) aumento todo
 // o texto do site.
 
+// 1
+
 const todosElementos = document.querySelectorAll('body');
 
 todosElementos.forEach((coisa) => {
@@ -100,6 +102,45 @@ todosElementos.forEach((coisa) => {
     console.log('Elemento clicado: ', coisa);
   })
 })
+
+// 2 - só copiar o código de cima e trocar o console.log('texto', objeto); por console.remove();
+/* //O código abaixo faz com que tudo seja apagado
+const todosElementos2 = document.querySelectorAll('body');
+
+todosElementos2.forEach((coisa) => {
+  coisa.addEventListener('click', () => {
+
+    coisa.remove(); // Para remover o elemento clicado
+  });
+});
+*/
+
+// 2
+
+const todosElementos3 = document.querySelectorAll('body *');
+
+todosElementos3.forEach((coisa) => {
+  coisa.addEventListener('click', (event) => {
+
+    event.stopPropagation(); // Impede que o evento se propague para outros elementos https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
+
+    coisa.remove();
+  });
+});
+
+
+// 3
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 't' || event.key === 'T') {
+    const todosElementos = document.querySelectorAll('body');
+
+    todosElementos.forEach((elemento) => {
+      elemento.classList.toggle('aumentar-texto');
+    });
+  }
+});
+
 
 
 /*
