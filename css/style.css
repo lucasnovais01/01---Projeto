@@ -233,3 +233,24 @@ body { /* Body é o elemento pai, o grid-section é filho do body */
 .aumentar-texto {
   font-size: 120%;
 }
+
+
+/* ---- ACCORDION ----- */
+
+/* estilo de navegação do accordion */
+
+.js-accordion dd {  
+  display: none;
+}
+
+.js-accordion dt::after{
+  content: '⬎';
+}
+
+.js-accordion dt.ativo::after{
+  content:'⭡';
+}
+
+.js-accordion dd.ativo {
+  display: block;
+}
