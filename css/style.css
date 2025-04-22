@@ -245,6 +245,7 @@ body { /* Body é o elemento pai, o grid-section é filho do body */
 
 .js-accordion dt::after{
   content: '⬎';
+  margin-left: '10px';
 }
 
 .js-accordion dt.ativo::after{
@@ -253,4 +254,25 @@ body { /* Body é o elemento pai, o grid-section é filho do body */
 
 .js-accordion dd.ativo {
   display: block;
+  animation: slideDown .5s forwards;
 }
+
+.js-accordion dt.ativo::after{
+  content: 'II';
+
+}
+
+@keyframes slideDown {
+
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
+
+
