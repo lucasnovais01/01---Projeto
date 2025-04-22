@@ -261,9 +261,7 @@ body { /* Body é o elemento pai, o grid-section é filho do body */
   content: 'II';
 
 }
-
 @keyframes slideDown {
-
   from {
     opacity: 0;
     max-height: 0;

@@ -1,3 +1,29 @@
 console.log("08 - Scroll suave");
 
 
+/* --- Acima os Comandos do 07Accordion --- */
+
+initAccordion();
+
+function initAccordion(){
+
+  const linkInternos = document.querySelectorAll('.js-menu a[href^="#"]'); //todos que comecem com o # dentro do menu
+
+  function scrolltoSection(e){
+    e.preventDefault(); //vai evitar que a página recarrega, isto vai acontecer ao clicar por causa do callback, causando uma transição mais suave
+    
+    const href = e.currentTarget.getAttribute('href');
+  
+  }
+
+
+
+  linkInternos.forEach((item)=> { //arrow function
+    
+    item.addEventListener('click', scrolltoSection);
+  });
+
+  console.log (linkInternos);
+}
+
+initScrollSuave();
