@@ -141,6 +141,19 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+//forma do professor de fazer o 3
+
+function handleClick(e){
+  if (e.key === 't'){
+    document.documentElement.classList.toggle('textoMaior');
+  }
+}
+
+window.addEventListener('keydown',handleClick)
+
+
+
+
 
 
 /*

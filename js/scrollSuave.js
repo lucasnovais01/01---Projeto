@@ -52,3 +52,5 @@ function initScrollSuave(){
 }
 
 initScrollSuave();
+
+/* ESTÁ FUNCIONANDO, CONSERTAR DEPOIS O 07 */

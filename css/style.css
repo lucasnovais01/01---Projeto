@@ -272,5 +272,16 @@ body { /* Body é o elemento pai, o grid-section é filho do body */
   }
 }
 
+/* --- Animação Suave --- */
 
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate(0,0,0);
+}
 
