@@ -14,9 +14,12 @@
   justify-content: center;
   align-items: center;
 
-/*  display: none;  */
-
+  display: none; /*funciona juntando com o de baixo, se .ativo, então display: flex; senão display none */ 
 }
+.modal-container.ativo{
+  display: flex;
+}
+
 
 .modal {
   background-color: white;
@@ -46,4 +49,34 @@
   font-family: Roboto, monospace;
   cursor: pointer;
 
+}
+
+.modal label {
+  font-family: Roboto, monospace;
+  display: block;
+  font-weight: 600;
+
+  margin: 1rem 0 .5rem 0;
+
+}
+
+.modal input {
+  width: 100%;
+
+  padding: .7rem .5rem;
+
+  box-sizing: border-box;
+}
+
+.modal button[type="submit"]{
+  display: block;
+  background: #E54;
+  border: none;
+  border-radius: 4px ;
+  padding: .7rem 2rem;
+  color: white;
+  font-weight: bold;
+  font-family: Roboto, monospace;
+
+  margin-top: 1rem;
 }

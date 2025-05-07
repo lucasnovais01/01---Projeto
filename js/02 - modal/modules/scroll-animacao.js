@@ -1,4 +1,4 @@
-console.log("09 - Animação Scroll");
+//console.log("09 - Animação Scroll");
 
 export default function initAnimacaoScroll(){
 

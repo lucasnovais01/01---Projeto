@@ -1,4 +1,4 @@
-console.log("08 - Scroll suave");
+//console.log("Scroll suave - Funcionando");
 
 export default function initScrollSuave(){
 
