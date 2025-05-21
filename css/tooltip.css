@@ -12,6 +12,7 @@
   border-radius: 2px;
   top: 0px;
   left: 0px;
-
-
+}
+.tooltip {                /* só pra ajudar a enxergar */
+  border: 1px solid red;
 }
